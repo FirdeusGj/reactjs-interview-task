@@ -1,0 +1,58 @@
+.active{
+    background: rgb(197, 195, 195) !important;
+    transition: all 200ms ease-in-out;
+    color:black;
+    text-decoration: none;
+}
+.active > .category__file > p{
+    color:black;
+}
+.active > .category__file > svg,
+.active > .category__arrow > svg{
+    fill:black;
+}
+.active > .category__arrow > svg{
+    rotate: -90deg;
+}
+.category__file{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.categoryFile__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1264A3;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.createCategory-input,
+.categoryFile__wrapper,
+.createNotes__button--wrapper,
+.createNotes__input--wrapper{
+    filter:drop-shadow(0 0 3px rgb(188, 188, 188))
+}
+.categoryFile__wrapper:hover{
+    background: #10568b;
+}
+.category__file svg{
+    height: 20px;
+    margin-right: 10px;
+}
+.category__file svg,
+.category__arrow svg,
+.createCategory__svg svg
+{
+    fill:white;
+    transition: all 200ms ease-in-out;
+}
+.category__file p,
+.createCategory__button button{
+    margin: 0;
+    transition: all 200ms ease-in-out;
+    padding: 0;
+    color:white;
+}

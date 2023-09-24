@@ -1,0 +1,191 @@
+.notes__wrapper{
+    display: flex;
+    align-items: flex-start;
+ justify-content: center;
+ flex-direction: column;
+}
+.notes__section{
+    width: 100%;
+    height: 95vh;
+    background-color: aliceblue;
+    padding-left: 10px;
+    overflow-y: scroll;
+    border:1px solid rgb(178, 183, 188);
+    border-radius: 5px;
+}
+.notes__deleteButton{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.createNotes{
+    display: flex;
+    margin: 10px 0 20px 0;
+    gap: 0.7rem;
+}
+.createNotes__button--wrapper{
+    display: flex;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: space-between;
+    background:#71cf48;
+    width: 200px;
+    cursor: pointer;
+}
+.createNotes__button{
+    width: 67%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.createNotes__button button{
+    color:white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.createNotes__svg{
+    border-left: #79966d 1px solid;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.createNotes__svg svg{
+    fill:white;
+}
+.createNotes__input--wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.createNotes__input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:rgb(213, 212, 212) 1px solid;
+    background: rgb(247, 246, 246);
+    height: 34px;
+    border-radius: 7px;
+}
+.createNotes__input svg{
+    fill: rgb(213, 211, 211);
+    margin-left: 5px;
+}
+.createNotes__input input{
+    border: none;
+    background-color: transparent;
+}
+.createNotes__input input:focus{
+    outline: none;
+}
+.notes__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(177, 177, 177);
+    width: 100%;
+}
+.notes__text{
+    width: 90%;
+    word-wrap: break-word;
+}
+.notes__info button{
+    margin-right: 10px;
+    background-color: #fe4c4a;
+    border:none;
+    height: 35px;
+    width: 35px;
+    border-radius:7px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.notes__info button:hover{
+    background-color: #EB4345;
+}
+.notes__info h2,
+.notes__info p{
+    margin: 0;
+    padding: 0;
+}
+.createNote{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 15px;
+    background: rgb(240, 240, 240);
+    border-radius: 10px;
+    border:2px solid rgb(211, 211, 211);
+    transform: translate(-50%, -50%);
+}
+.createNote__input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.createNote__input input{
+    width: 100%;
+    border-radius: 5px;
+    border:none;
+    height: 30px;
+    padding-left: 5px;
+}
+.createNote__input input:focus,
+.createNote__textarea textarea:focus{
+    outline: none;
+}
+.createNote__textarea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.createNote__textarea textarea{
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+    border:none;
+    font-family: sans-serif;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.createNote__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.createNote__buttons button{
+    width: 50%;
+    height: 40px;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.createNote__buttons button:nth-child(1){
+    background-color: #71CF48;
+}
+.createNote__buttons button:nth-child(2){
+    background-color: #FE4C4A;
+}
+.createNote__wrapper{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.264);
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

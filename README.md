@@ -1,38 +1,39 @@
-# Flex Business Solutions Tech Test - Notes app
+# Getting Started with Create React App
 
-In Flex Business Solutions, we aim to provide excellence and efficiency on all our lines of code in order to support the day-to-day activities of the company using our software solutions. In this task, you will be provided with a simple design of an app, fetching a list of products from an external source and allowing the user to search or filter among the list.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-### Tech Test Overview
-We have provided below the Figma link of this task. On the main page,
+In the project directory, you can run:
 
-[FIGMA] [https://www.figma.com/file/T6hUVUDh5ihoYwQILcJDcf/React-Home-Test?type=design&node-id=0%3A1&mode=design&t=lOTjaPb3chxGqXkY-1]
+### `npm start`
 
-We love to see:
-- Functional code
-- Good design
-- Unit testing
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Notes
-All of you work should take place inside this repository.
+### `npm run build`
 
-You are free to use any packages that would help with this task
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-You do not need to add additional security measures as part of this exercise.
-We're interested in how you break down the work and build your solution in a clean, easy-to-use, reusable and testable manner.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Deliverables
-You must follow the Figma design and need to add the functionality of:
-a) Create new notes
-c) Show all notes
-b) Search notes
+### `How to make this app more secure?`
 
-**Create a folder inside the repository and include finished screenshots of the app.**
-**Please make sure to update the readme with**:
+Implement Authentication and Authorization
+Input Validation to prevent malicious inputs and SQL injection attacks.
+Ensure that the app communicates over HTTPS to encrypt data in transit.
+Implement rate limiting to prevent abuse or excessive requests from a single user or IP address.
 
-- How to run your app with all the necessary details
-- Relating to the task please add answers to the following questions;
-    1. How might you make this app more secure?
-    2. How would you make this solution scale to millions of records?
+### `How to make this app scale to millions of records?`
+
+Database Optimization like NoSQL databases or distributed SQL databases.
+Implement caching mechanisms to reduce database load.
+Employ load balancing techniques.
+Add more server instances as needed to handle increased load.
